@@ -20,5 +20,5 @@
     vars:
       course: cloud
       duration: 20hr
-      trainer: vamshi
+      trainer: sripal
       msg: "Hello {{ course }}, course Duration: {{ duration }}, trainer:{{ trainer }}"
