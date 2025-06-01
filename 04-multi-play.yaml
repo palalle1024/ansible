@@ -1,0 +1,12 @@
+- name: pal
+  hosts: local 
+  connection: local
+  tasks:
+  - name: hello from pal 
+    ansible.builtin.debug:
+      msg: "Hello from pal"
+
+  - name: hello from vamshi
+    ansible.builtin.debug:
+      msg: "Hello from vamshi"
+    
