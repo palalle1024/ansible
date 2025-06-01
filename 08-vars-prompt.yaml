@@ -12,4 +12,4 @@
   tasks:
   - name: login details
     ansible.builtin.debug:
-      msg: "Hello {{ course }}, course Duration: {{ duration }}, traine r:{{ trainer }}"
+      msg: "Hello {{ username }}, password: {{ duration }}.
