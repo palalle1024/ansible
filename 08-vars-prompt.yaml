@@ -1,0 +1,15 @@
+- name: prompt
+  hosts: local
+  connections: local
+  vars_prompt: 
+  - name: username
+    prompt: please enter your username 
+    private: true 
+  
+  - name: password 
+    prompt: enter your password 
+    private: true 
+  tasks:
+  - name: login details
+    ansible.builtin.debug:
+      msg: "Hello {{ course }}, course Duration: {{ duration }}, traine r:{{ trainer }}"
