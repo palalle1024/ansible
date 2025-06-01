@@ -16,9 +16,9 @@
       msg: "Hello {{ course }}, course Duration: {{ duration }}, trainer:{{ trainer }}"
 
   - name: print course info 
-    ansible.builtin.debug:
     vars:
       course: cloud
       duration: 20hr
       trainer: sripal
+    ansible.builtin.debug:
       msg: "Hello {{ course }}, course Duration: {{ duration }}, trainer:{{ trainer }}"
