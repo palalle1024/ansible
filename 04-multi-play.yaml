@@ -9,4 +9,14 @@
   - name: hello from vamshi
     ansible.builtin.debug:
       msg: "Hello from vamshi"
+
+
+- name: pal2
+  hosts: frontend 
+  tasks:
+  - name: hello from pal2 
+    ansible.builtin.debug:
+      msg: "Hello from pal2"
+
+
     
