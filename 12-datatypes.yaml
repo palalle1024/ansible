@@ -13,7 +13,7 @@
       ci: jenkins
       scripting: "shell, ansible, terraform, python"
   tasks:
-    name: print data types
+  - name: print data types
     ansible.builtin.debug:
       msg: "course is: {{ course }}, duration: {{ duration }}, is live:{{ is_live }}, tools are: {{ tools }}, concepts are:{{ concepts }}"
 
