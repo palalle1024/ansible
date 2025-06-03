@@ -17,5 +17,3 @@
     ansible.builtin.debug:
       msg: "course is: {{ course }}, duration: {{ duration }}, is live:{{ is_live }}, tools are: {{ tools }}, concepts are:{{ concepts }}"
 
-
-
