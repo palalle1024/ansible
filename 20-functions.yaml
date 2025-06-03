@@ -7,3 +7,8 @@
   - name: print name 
     ansible.builtin.debug:
       msg: "hello, {{ persons | default('ramesh') }}"
+
+
+  - name: print names 
+    ansible.builtin.debug:
+      msg: "Hello, {{ persons | (split',') }}"
