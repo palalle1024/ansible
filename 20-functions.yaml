@@ -36,5 +36,5 @@
     vars:
       name: "paldinakar alle"
     ansible.builtin.debug:
-      msg: "my name is:{{ name | UPPER }}"
+      msg: "my name is:{{ name | upper }}"
   
