@@ -22,3 +22,12 @@
         name: devops
     ansible.builtin.debug:
       msg: "course:{{ course | dict2items }}"
+
+  - name : list to maps
+    vars:
+      course:
+        {'course': 'devops'}
+        {'duration': '10'}
+        {'trainer': 'pal'}
+    ansible.builtin.debug:
+      msg: "course info {{ course | items2dict }}"
