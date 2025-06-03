@@ -1,0 +1,21 @@
+- name: conditions 
+  hosts: local
+  connection: local 
+  vars:
+    duration: 120 
+    course: "devops with aws" # string
+    is_live: true #boolean
+    tools: # list[]
+    - linux
+    - shell 
+    - ansible 
+    concepts: 
+      ci: jenkins
+      scripting: "shell, ansible, terraform, python"
+  tasks:
+    name: print data types
+    ansible.builtin.debug:
+      msg: "course is: {{ course }}, duration: {{ duraiton }}, is live:{{ is_live }}, tools are: {{ tools }}, concepts are:{{ concepts }}"
+
+
+
