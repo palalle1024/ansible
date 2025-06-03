@@ -1,5 +1,6 @@
 - name: playcontrol control using ansible facts 
-  hosts: frontend 
+  hosts: local
+  connection: local
   
   - name: install nginx if redhat
     ansible.builtin.dnf:
