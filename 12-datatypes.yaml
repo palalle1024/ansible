@@ -1,4 +1,4 @@
-- name: conditions 
+- name: datatypes
   hosts: local
   connection: local 
   vars:
