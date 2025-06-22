@@ -15,4 +15,4 @@
   - name: dont create 
     ansible.builtin.debug: 
       msg: "user already exists"
-    when: output.rc == 0
+    when: output.rc == 0 
