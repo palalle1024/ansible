@@ -8,5 +8,6 @@
     ignore_errors: true 
 
   - name: create user 
+    become: yes
     ansible.builtin.command: user add roboshop 
     when: output.rc  != 0 
