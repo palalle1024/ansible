@@ -1,0 +1,8 @@
+- name: user creation 
+  hosts: local 
+  connection: local 
+  tasks: 
+  - name: creation of user
+    ansible.builtin.command: id roboshop 
+  
+  
