@@ -4,5 +4,9 @@
   tasks: 
   - name: creation of user
     ansible.builtin.command: id roboshop 
-  
-  
+    register: output
+    ignore_errors: true 
+
+  - name: create user 
+    ansible.builtin.command: user add roboshop 
+    when: output.rc  != 0 
