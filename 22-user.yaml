@@ -10,4 +10,8 @@
   - name: create user 
     become: yes
     ansible.builtin.command: useradd roboshop 
-    when: output.rc  != 0 
+    when: output.rc  != 0  
+
+  - name: dont create 
+    ansible.builtin.debug: 
+    when: output.rc == 0
