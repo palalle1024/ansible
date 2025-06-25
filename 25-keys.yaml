@@ -1,6 +1,5 @@
 - name: coonect using 
-  hosts: key 
-  connection: local
+  hosts: keys
   become: yes 
   tasks:
   - name:  install nginx 
