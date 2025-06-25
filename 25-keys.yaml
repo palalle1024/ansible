@@ -2,13 +2,13 @@
   hosts: key 
   become: yes 
   tasks:
-- name:  install nginx 
-  ansible.builtin.dnf: 
-    name: nginx 
-    state: present 
+  - name:  install nginx 
+    ansible.builtin.dnf: 
+      name: nginx 
+      state: present 
 
-- name: start service 
-  ansible.builtin.service:
-    name: nginx 
-    state: started
-    enabled: yes 
+  - name: start service 
+    ansible.builtin.service:
+      name: nginx 
+      state: started
+      enabled: yes 
