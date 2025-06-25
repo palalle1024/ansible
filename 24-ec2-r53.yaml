@@ -6,9 +6,9 @@
     - mysql
     - backend
     - frontend
-    subnet_id: subnet-0984d47e985171bd0
-    sg_id: sg-01bc7ebe005fb1cb2
-    zone: daws84s.site
+    subnet_id: subnet-0dae73ef299fbe161
+    sg_id: sg-00224112cda97e2f8
+    zone: palalle.site
   tasks:
   - name: create ec2
     amazon.aws.ec2_instance:
